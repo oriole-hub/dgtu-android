@@ -1,0 +1,67 @@
+{
+  "expo": {
+    "name": "Ростелеком",
+    "slug": "rostelecom",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/logo.png",
+    "scheme": "rostelecom",
+    "newArchEnabled": true,
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/images/logo.png",
+        "monochromeImage": "./assets/images/logo.png"
+      },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false,
+      "package": "com.dtsu.rtk"
+    },
+    "web": {
+      "output": "static",
+      "favicon": "./assets/images/logo.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-local-authentication",
+        {
+          "faceIDPermission": "Разрешите Face ID для быстрого входа в приложение."
+        }
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/logo.png",
+          "resizeMode": "cover",
+          "imageWidth": 288,
+          "backgroundColor": "#ffffff",
+          "enableFullScreenImage_legacy": true,
+          "dark": {
+            "backgroundColor": "#101828"
+          }
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Приложению нужен доступ к геолокации, чтобы показать ваше положение на карте рядом с офисом."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": false
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "9366aa4e-1f4e-4eb5-9013-46f2d1ff3244"
+      }
+    }
+  }
+}
